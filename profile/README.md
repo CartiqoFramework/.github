@@ -109,7 +109,7 @@ See [LICENSE](../LICENSE) for more details.
 ## 💬 Join Our Community
 
 Join our Discord to get support, contribute ideas, or chat with other developers!
-[![Join our Discord](https://img.shields.io/discord/1044098950455627867?color=5865F2&label=Join%20Discord&logo=discord&logoColor=white)](https://discord.gg/7jGVVbBq5h)
+[![Join our Discord](https://img.shields.io/discord/1044098950455627867?color=5865F2&label=Join%20Discord&logo=discord&logoColor=white)](https://discord.gg/8p2xHjsgZ3)
 
 ---
 
