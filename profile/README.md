@@ -15,14 +15,15 @@
 
 CARTIQO is a small independent studio in Denmark, self funded and small on purpose. We do two things:
 
-- **We build and run our own software.** Starting with Cartiqo, an all in one Discord bot.
+- **We build and run our own software.** Starting with Pineapple, the one bot a Discord server actually needs.
 - **We build websites for other people.** You see the real site working, in full, before you pay for it.
 
 Whoever designs a thing builds it, so nothing gets lost in a handover. Launch day is the start of the work, not the end of it.
 
 | The numbers | |
 | --: | :-- |
-| **33** | modules in Cartiqo, every one running, none coming soon |
+| **14** | modules in Pineapple, on one subscription |
+| **3** | slash commands in the picker, none of them for setup |
 | **$0** | what a client pays before seeing their finished site |
 | **2026** | independent since |
 
@@ -30,10 +31,12 @@ Whoever designs a thing builds it, so nothing gets lost in a handover. Launch da
 
 | Project | What it is | Status |
 | :-- | :-- | :-- |
-| **Cartiqo** | One app for everything a Discord server runs on: moderation, engagement, utilities, security, analytics and automation, with the config surface of a real product rather than a dashboard bolted onto a script. | Building |
+| **Pineapple** | Verification, tickets, moderation, applications, levels, giveaways and eight more, sharing one theme, one log and one set of permissions. Every module is set up on a dashboard with a live preview, so the message you approve is the message it posts. | Building |
 | **CARTIQO Lists** | A directory for Discord bots and communities. Listings, voting and a public API. | Early |
 | **CARTIQO Tools** | Free browser tools for people who run communities, including a cover and icon studio that exports PNG and SVG. | Building |
 | **[Walu_Cutzz](https://walucutzz.com)** | A booking site for a barbershop in Kolding. Clients pick the cut and a time, no phone call, no DM. | Live |
+
+Pineapple's rule, and the reason it is not another bot with forty commands: **commands are for acting, the dashboard is for deciding.** Three commands in the picker, none of them for setup, and anything you configure you see previewed before it posts.
 
 More detail on all of it at [cartiqo.xyz/projects](https://cartiqo.xyz/projects).
 
