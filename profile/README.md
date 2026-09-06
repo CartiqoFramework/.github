@@ -1,103 +1,105 @@
 <div align="center">
 
-<img src="https://avatars.githubusercontent.com/u/215322618?s=120&v=4" width="80" style="border-radius: 12px;" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CartiqoFramework/.github/main/profile/assets/banner-dark.svg">
+  <img alt="CARTIQO. Independent product studio. Software worth trusting." src="https://raw.githubusercontent.com/CartiqoFramework/.github/main/profile/assets/banner-light.svg">
+</picture>
 
-# CɅRTIQO. FRAMEWORK
+<br>
 
-**A TypeScript-first foundation for Discord bots, FiveM scripts, and automation systems.**
-
-[![TypeScript](https://img.shields.io/badge/TypeScript-5+-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Platform](https://img.shields.io/badge/Platform-Discord%20%7C%20FiveM-5865F2?style=flat-square&logo=discord&logoColor=white)](https://cartiqo.xyz)
-[![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](LICENSE)
-[![Discord](https://img.shields.io/discord/1044098950455627867?color=5865F2&label=Discord&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/8p2xHjsgZ3)
-
-[cartiqo.xyz](https://cartiqo.xyz) · [Join Discord](https://discord.gg/8p2xHjsgZ3) · [Browse Repos](https://github.com/orgs/CartiqoFramework/repositories)
+[![Website](https://img.shields.io/badge/Website-cartiqo.xyz-7C5CFF?style=flat-square&labelColor=111113)](https://cartiqo.xyz) [![Discord](https://img.shields.io/badge/Discord-Join%20the%20server-2A2D34?style=flat-square&labelColor=111113&logo=discord&logoColor=white)](https://discord.gg/YTKp4MnN9Q) [![Commission](https://img.shields.io/badge/Work%20with%20us-Start%20a%20brief-2A2D34?style=flat-square&labelColor=111113)](https://cartiqo.xyz/commission) [![Location](https://img.shields.io/badge/Based%20in-Denmark-2A2D34?style=flat-square&labelColor=111113)](https://cartiqo.xyz)
 
 </div>
 
----
+## We run what we build
 
-## What is CɅRTIQO?
+CARTIQO is a small independent studio in Denmark, self funded and small on purpose. We do two things:
 
-CɅRTIQO is a modular, developer-friendly framework for building production-ready bots and game scripts without the usual boilerplate mess. Every package is written in strongly typed TypeScript (or Lua where FiveM requires it) and designed to slot together cleanly — you pick what you need and leave the rest.
+- **We build and run our own software.** Starting with Cartiqo, an all in one Discord bot.
+- **We build websites for other people.** You see the real site working, in full, before you pay for it.
 
-The goal: make bot and script development **structured, fast, and actually enjoyable**.
+Whoever designs a thing builds it, so nothing gets lost in a handover. Launch day is the start of the work, not the end of it.
 
----
+| The numbers | |
+| --: | :-- |
+| **33** | modules in Cartiqo, every one running, none coming soon |
+| **$0** | what a client pays before seeing their finished site |
+| **2026** | independent since |
 
-## Packages
+## What we are building
 
-| Repository | Description | Status |
-|---|---|---|
-| [**CTQCore**](https://github.com/CartiqoFramework/CTQCore) | Core FiveM resource — connection queue, config layer, built on CTQBridge | ⚠️ In development |
-| [**CTQBridge**](https://github.com/CartiqoFramework/CTQBridge) | Connects your FiveM server to the CARTIQO dashboard. Kick, ban, and manage players with QBCore, Qbox, ESX, or standalone support | ⚠️ In development |
-| [**CTQui**](https://github.com/CartiqoFramework/CTQui) | Modern NUI kit for FiveM — notifications, text UI, progress bars, and more | ⚠️ In development |
+| Project | What it is | Status |
+| :-- | :-- | :-- |
+| **Cartiqo** | One app for everything a Discord server runs on: moderation, engagement, utilities, security, analytics and automation, with the config surface of a real product rather than a dashboard bolted onto a script. | Building |
+| **CARTIQO Lists** | A directory for Discord bots and communities. Listings, voting and a public API. | Early |
+| **CARTIQO Tools** | Free browser tools for people who run communities, including a cover and icon studio that exports PNG and SVG. | Building |
+| **[Walu_Cutzz](https://walucutzz.com)** | A booking site for a barbershop in Kolding. Clients pick the cut and a time, no phone call, no DM. | Live |
 
-> ⚠️ All packages are currently **untested / not production-ready**. Use in staging environments only and expect breaking changes.
+More detail on all of it at [cartiqo.xyz/projects](https://cartiqo.xyz/projects).
 
----
+## Open source
 
-## Tech Stack
+The repositories we keep public. Most of our product code is private while it is being built, and moves out here when it is worth someone else's time.
 
-| Layer | Technologies |
-|---|---|
-| **Languages** | TypeScript, Lua, JavaScript |
-| **Runtime** | Node.js |
-| **Databases** | Prisma · MySQL · MongoDB |
-| **Frameworks** | Discord.js · QBCore · ESX · Qbox |
-| **Tooling** | ESLint · Prettier · GitHub Actions |
+| Repository | What it does |
+| :-- | :-- |
+| [**discord-transcript**](https://github.com/CartiqoFramework/discord-transcript) | Self contained HTML transcripts of Discord channels, rendered with Discord's own message components. TypeScript. |
+| [**CTQCore**](https://github.com/CartiqoFramework/CTQCore) | FiveM core resource: connect queue and configuration, built on CTQBridge. Lua. |
+| [**CTQBridge**](https://github.com/CartiqoFramework/CTQBridge) | Connects a FiveM server to the CARTIQO dashboard. QBCore, Qbox, ESX and standalone. Lua. |
+| [**CTQui**](https://github.com/CartiqoFramework/CTQui) | A modern NUI kit for FiveM: notifications, text UI, progress bars. JavaScript. |
 
----
+The three FiveM resources are early and untested. They are published so the work is readable, not because they are ready for a production server. We say so on each one rather than letting you find out.
 
-## Design Principles
+Everything else we have opened up is in [the repository list](https://github.com/orgs/CartiqoFramework/repositories).
 
-- **Type-safe by default** — TypeScript throughout, so errors surface at compile time, not runtime.
-- **Modular architecture** — each package does one job. Combine what you need; ignore what you don't.
-- **Plugin-friendly** — extend core behaviour without touching core code.
-- **Lightweight utilities** — no bloated dependencies. Helpers for databases, events, and APIs only when they earn their place.
-- **Production-oriented** — config validation, structured logging, and permission layers built in from the start.
+## How we work
 
----
+| Step | |
+| :-- | :-- |
+| **01 Define** | Get clear on the problem and who it is for before anything gets drawn. Small scope, high standard. |
+| **02 Design** | Draw the real screens, not a rough sketch. What you approve is what gets built. |
+| **03 Build** | Built properly and checked over, in pieces that fit together, so it can change later without breaking. |
+| **04 Ship and run** | Release it, watch how it behaves, keep improving it. |
 
-## Getting Started
+For commissioned work the deal is simple: you brief us, we accept or decline, and if we take it on you see a real preview of your site before any money moves. Like it and you pay and it is yours. Do not, and you owe nothing. The quote is fixed before the preview, so there is no moving number. Start at [cartiqo.xyz/commission](https://cartiqo.xyz/commission).
 
-Each package has its own setup guide in its repository. Start with the one that fits your use case:
+## How we build it
 
-- **Building for FiveM?** → Start with [CTQBridge](https://github.com/CartiqoFramework/CTQBridge), then layer in [CTQCore](https://github.com/CartiqoFramework/CTQCore) and [CTQui](https://github.com/CartiqoFramework/CTQui).
-- **Need a CARTIQO dashboard connection?** → CTQBridge handles the server ↔ dashboard link for player management.
-- **Want a UI kit for your FiveM scripts?** → CTQui gives you ready-made notifications, progress bars, and text UI components.
+Everything ships on one stack so the studio only has to be excellent at a small number of things.
 
----
+| Layer | What we use |
+| :-- | :-- |
+| Language | TypeScript everywhere, Lua for FiveM |
+| Web | Next.js 15, React 19, Tailwind CSS |
+| Design system | One shared component library and token file per project, vendored rather than linked |
+| Data | Prisma, MySQL |
+| Discord | discord.js, Sapphire |
+| Tooling | pnpm, Turborepo, ESLint, Prettier, GitHub Actions |
 
-## Contributing
+House rules live in [CONTRIBUTING.md](https://github.com/CartiqoFramework/.github/blob/main/CONTRIBUTING.md): conventional commits with a subject that stands alone in a file list, one commit per module, tokens edited instead of components.
 
-Pull requests are welcome. If you find a bug, open an issue first so we can align on the fix before you write code.
+## Official channels
 
-1. Fork the relevant repository.
-2. Create a feature branch: `git checkout -b feat/your-feature`
-3. Commit your changes with a clear message.
-4. Open a pull request against `main`.
+Anything claiming to be CARTIQO that is not on this list is not us.
 
----
+| Where | Handle |
+| :-- | :-- |
+| Web | [cartiqo.xyz](https://cartiqo.xyz), cartiqo.app |
+| GitHub | [@CartiqoFramework](https://github.com/CartiqoFramework) |
+| Discord | [CɅRTIQO. Support](https://discord.gg/YTKp4MnN9Q) |
+| Instagram | [@cartiqo.xyz](https://www.instagram.com/cartiqo.xyz/) |
+| Facebook | [CARTIQO](https://www.facebook.com/profile.php?id=61591562471864) |
 
-## Community & Support
+We never ask for passwords, tokens or payment in a DM. If someone using our name does, report it to [hello@cartiqo.xyz](mailto:hello@cartiqo.xyz) or open an [impersonation report](https://github.com/CartiqoFramework/.github/issues/new?template=impersonation-report.yml).
 
-Got questions? Want to share what you're building, or contribute ideas?
+## Contact
 
-**[Join the CɅRTIQO Discord →](https://discord.gg/wh2UVKdC3h)**
+Work, questions, security reports and everything else: [hello@cartiqo.xyz](mailto:hello@cartiqo.xyz).
 
-You can also reach us directly at [duckodas@gmail.com](mailto:duckodas@gmail.com).
-
----
-
-## License
-
-All CɅRTIQO repositories are licensed under the **[MIT License](LICENSE)** unless stated otherwise in the individual repo.
-
----
+Security issues have their own route, please read [SECURITY.md](https://github.com/CartiqoFramework/.github/blob/main/SECURITY.md) first.
 
 <div align="center">
 
-*"Build powerful systems. The smart way."*
+<sub>Released under the MIT License unless a repository says otherwise. Copyright CARTIQO.</sub>
 
 </div>
