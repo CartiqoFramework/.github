@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and general help
+    url: https://discord.gg/YTKp4MnN9Q
+    about: Ask in our Discord. Questions get answered faster there than in an issue.
+  - name: Report a security vulnerability
+    url: https://github.com/CartiqoFramework/.github/blob/main/SECURITY.md
+    about: Please do not open a public issue for security problems.
+  - name: Hire CARTIQO to build something
+    url: https://cartiqo.xyz/commission
+    about: Brief us on a website or product. You see it working before you pay.

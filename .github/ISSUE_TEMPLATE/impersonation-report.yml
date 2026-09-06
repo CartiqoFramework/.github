@@ -1,0 +1,60 @@
+name: Impersonation or scam report
+description: Someone is using the CARTIQO name, logo or domain and it is not us.
+title: "impersonation: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for flagging this. Everything that is genuinely ours is listed on our [profile](https://github.com/CartiqoFramework).
+
+        We never ask for passwords, tokens or payment in a direct message. **If you have already sent money or credentials, do not wait on us:** contact your bank or the platform first, then tell us here or at hello@cartiqo.xyz.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is it
+      options:
+        - A website or domain
+        - A Discord account or server
+        - A social media account
+        - An email
+        - A repository or package
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: where
+    attributes:
+      label: Where is it
+      description: Links, handles, invite codes, or the sender address. Copy them exactly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What are they doing
+      description: What were you asked for or promised? Screenshots help, but redact your own personal details first.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: harm
+    attributes:
+      label: Has anyone been harmed
+      options:
+        - label: Money changed hands
+          required: false
+        - label: Account credentials or a token were handed over
+          required: false
+        - label: Not that I know of
+          required: false
+
+  - type: input
+    id: contact
+    attributes:
+      label: How we can reach you
+      description: Optional. Leave blank if you would rather stay anonymous.
+    validations:
+      required: false

@@ -1,0 +1,51 @@
+name: Feature request
+description: Suggest something we should build or change.
+title: "feat: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We say no to a lot of good ideas, because scope is the thing that kills small studios. A clear problem is far more persuasive than a clear solution, so lead with the problem.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to do, and what makes it hard or impossible today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you would like to happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What you tried or considered instead
+      description: Workarounds, other tools, or why the existing features do not cover it.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: How much does this block you
+      options:
+        - Nice to have
+        - It slows me down every week
+        - It stops me using the project
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched the existing issues and this is not already suggested
+          required: true
